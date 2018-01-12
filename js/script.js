@@ -1,11 +1,10 @@
 $(function(){
   $(window).scroll(function() {
   var scrollPos = $(window).scrollTop();
-    setAnimation($('.rect1'),scrollPos,0,500);
-    setAnimation($('.rect2'),scrollPos,500,1000);
-    setAnimation($('.rect3'),scrollPos,1000,1500);
-    setAnimation($('.rect4'),scrollPos,1500,2000);
-    setAnimation($('.rect5'),scrollPos,2000,2500);
+  var height = window.innerHeight;
+    setAnimation($('#about'),scrollPos,0,height);
+    setAnimation($('#concept'),scrollPos,height,height*2);
+    setAnimation($('#info'),scrollPos,height*2,height*3);
   });
 });
 
@@ -36,5 +35,5 @@ function setAnimation(element,pos,min,max){
     element.css({'transform':'scale(' + scale + ')'});
     element.css({'opacity': opacity });
   }
-  
+
 }
