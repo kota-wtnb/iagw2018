@@ -5,6 +5,7 @@ $(function(){
     setAnimation($('#about'),scrollPos,0,height);
     setAnimation($('#concept'),scrollPos,height,height*2);
     setAnimation($('#info'),scrollPos,height*2,height*3);
+    setAnimation($('#access'),scrollPos,height*3,height*4);
   });
 });
 

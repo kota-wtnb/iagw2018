@@ -119,6 +119,37 @@ span.concept-quest-ja {
     margin-bottom: 5%;
     color: #666666; }
 
+#access {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#access-content {
+  background: #ffffff;
+  opacity: 0.9;
+  width: 100%;
+  margin: 0 auto;
+  color: #333333; }
+  #access-content h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #666666; }
+
+#access-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #access-box #access-map {
+    margin: 50px; }
+  #access-box #access-message {
+    margin: 50px; }
+    #access-box #access-message p {
+      text-align: left; }
+
 /*出展者*/
 /*フッター*/
 /*アニメーション関連*/
