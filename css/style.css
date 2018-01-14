@@ -69,7 +69,23 @@ header {
 /*ファーストビュー*/
 #firstview {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   height: 100vh; }
+
+#firstview-content ul {
+  background: #ffffff;
+  opacity: 0.9;
+  padding: 10% 25%;
+  display: inline-block; }
+  #firstview-content ul li {
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #333333; }
 
 /*ABOUT*/
 #about {

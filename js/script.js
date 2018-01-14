@@ -8,6 +8,7 @@ $(function(){
   var endPos = height * 5;
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
+    setAnimation($('#firstview'),scrollPos,-(height/2),height/4);
     setAnimation($('#about'),scrollPos,0,conceptPos);
     setAnimation($('#concept'),scrollPos,conceptPos,infoPos);
     setAnimation($('#info'),scrollPos,infoPos,exhibitPos);
