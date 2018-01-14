@@ -15,7 +15,7 @@ body{
   background-attachment: fixed;
   text-align: center;
   width: 100vw;
-  height: 5000px;
+  height: 6000px;
   perspective: 500;
   font-family: 'DIN Medium', Avenir , "Open Sans" , "游ゴシック","Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
 }
@@ -71,6 +71,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 #about-content{
   background: #ffffff;
@@ -102,6 +103,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 #concept-content{
   background: #ffffff;
@@ -110,8 +112,7 @@ header{
   margin: 0 auto;
   color: #333333;
   h1{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 0;
     color: #666666;
   }
 }
@@ -149,6 +150,7 @@ span.concept-quest-ja{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 #info-content{
   background: #ffffff;
@@ -157,8 +159,7 @@ span.concept-quest-ja{
   margin: 0 auto;
   color: #333333;
   h1{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% auto;
     color: #666666;
   }
 }
@@ -207,7 +208,42 @@ span.concept-quest-ja{
 
 /*出展者*/
 #exhibitors{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#exhibitors-content{
+  background: #ffffff;
+  opacity: 0.9;
+  width: 100%;
+  h1{
+    margin: 5% auto;
+    color: #666666;
+  }
+}
 
+/*学外展情報*/
+#other-exhibition{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ox-content{
+  background: #ffffff;
+  opacity: 0.9;
+  width: 100%;
+  h1{
+    margin: 5% auto;
+    color: #666666;
+  }
 }
 
 /*フッター*/
