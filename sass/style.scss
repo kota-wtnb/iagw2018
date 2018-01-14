@@ -239,6 +239,41 @@ span.concept-quest-ja{
   opacity: 0.9;
   padding:20px;
 }
+#studios-explain{
+  position:fixed;
+  background: #ffffff;
+  opacity:0;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width:60vw;
+  height:auto;
+  padding:20px;
+  z-index:2000;
+  .sutudios-name{
+    font-size:20px;
+    margin:20px;
+  }
+  img{
+    width:60%;
+    margin:auto;
+  }
+  p{
+    text-align: justify;
+    margin:20px 30px;
+    line-height: 18px;
+    font-size: 14px;
+  }
+  .close{
+    color: #fff;
+    margin:auto;
+    width:50%;
+    height:30px;
+    line-height: 30px;
+    cursor:pointer;
+    background-color:#08499a;
+  }
+}
 /*学外展情報*/
 #other-exhibition{
   position: fixed;
@@ -254,8 +289,17 @@ span.concept-quest-ja{
   opacity: 0.9;
   width: 100%;
   h1{
-    margin: 5% auto;
+    margin: 5% auto 3% auto;
     color: #666666;
+  }
+  h2{
+    margin: 10px 0;
+  }
+  a:link{
+    color:#08499a;
+  }
+  li{
+    font-size: 13px;
   }
   .gakugai{
     padding:0 40px 50px 40px;
