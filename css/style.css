@@ -216,10 +216,13 @@ span.concept-quest-ja {
     text-align: left; }
     #exhibitors-content ul li {
       font-size: 15px;
-      margin: 2px 0; }
+      margin: 2px 0;
+      cursor: pointer; }
 
 #studios-explain {
   position: fixed;
+  transition: 2s;
+  display: none;
   background: #ffffff;
   opacity: 0;
   left: 50%;
@@ -234,6 +237,8 @@ span.concept-quest-ja {
     margin: 20px; }
   #studios-explain img {
     width: 60%;
+    max-height: 300px;
+    object-fit: contain;
     margin: auto; }
   #studios-explain p {
     text-align: justify;

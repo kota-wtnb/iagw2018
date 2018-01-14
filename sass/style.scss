@@ -233,6 +233,7 @@ span.concept-quest-ja{
     li{
       font-size:15px;
       margin:2px 0;
+      cursor:pointer;
     }
   }
   background: #ffffff;
@@ -241,6 +242,8 @@ span.concept-quest-ja{
 }
 #studios-explain{
   position:fixed;
+  transition:2s;
+  display:none;
   background: #ffffff;
   opacity:0;
   left:50%;
@@ -256,6 +259,8 @@ span.concept-quest-ja{
   }
   img{
     width:60%;
+    max-height: 300px;
+    object-fit: contain;
     margin:auto;
   }
   p{
