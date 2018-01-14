@@ -47,17 +47,15 @@ $(function(){
      var id = $(this).attr("id");
      studioInfo.forEach(function(s){
        if(id == s.id) {
-        $('#studios-explain').css({'display':'block','opacity':'1'});
-        $('#studios-explain').css({'animation':'block'});
         $('.sutudios-name').text(s.name);
         $('#studios-explain img').attr("src","img/" + s.id + ".jpg");
         $('#studios-explain p').text(s.text);
-        console.log(s);
+        $('#studios-explain').css({'z-index':'3000','opacity':'1'});
        }
      });
    });
    $('.close').click(function(){
-     $('#studios-explain').hide();
+     $('#studios-explain').css({'z-index':'-1000','opacity':'0'});
    });
 });
 

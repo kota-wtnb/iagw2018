@@ -242,8 +242,7 @@ span.concept-quest-ja{
 }
 #studios-explain{
   position:fixed;
-  transition:2s;
-  display:none;
+  transition:0.2s;
   background: #ffffff;
   opacity:0;
   left:50%;
@@ -252,7 +251,7 @@ span.concept-quest-ja{
   width:60vw;
   height:auto;
   padding:20px;
-  z-index:2000;
+  z-index:-2000;
   .sutudios-name{
     font-size:20px;
     margin:20px;
