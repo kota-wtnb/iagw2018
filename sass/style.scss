@@ -15,7 +15,7 @@ body{
   background-attachment: fixed;
   text-align: center;
   width: 100vw;
-  height: 6000px;
+  height: 600vh;
   perspective: 500;
   font-family: 'DIN Medium', Avenir , "Open Sans" , "游ゴシック","Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
 }
@@ -25,6 +25,16 @@ h1{
     line-height: 25px;
     letter-spacing:2px;
     margin-top: 0px;
+}
+h2{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing:2px;
+  margin-top: 0px;
+}
+li{
+  list-style: none;
 }
 
 /*ヘッダー*/
@@ -41,7 +51,6 @@ header{
     background-color: #8acdcd;
   }
   li{
-    list-style-type: none;
     font-size:20px;
     margin-left:15px;
     text-shadow: 1px 1px 0 rgba(#ffffff, 0.6);
@@ -227,15 +236,16 @@ span.concept-quest-ja{
   }
   ul{
     font-size:20px;
-    margin: 30px 50px;
+    margin: 30px 30px 30px 50px;
+    text-align: left;
     li{
       font-size:15px;
-      list-style: none;
       margin:2px 0;
     }
   }
   background: #ffffff;
   opacity: 0.9;
+  padding:20px;
 }
 /*学外展情報*/
 #other-exhibition{
@@ -255,32 +265,12 @@ span.concept-quest-ja{
     margin: 5% auto;
     color: #666666;
   }
+  .gakugai{
+    padding:0 40px 50px 40px;
+  }
 }
 
 /*フッター*/
 #footer{
-
-}
-
-/*アニメーション関連*/
-@keyframes fade-in {
-  from{
-    opacity:0;
-    transform: scale(0.1);
-  }
-  to{
-    opacity:1;
-    transform: scale(1);
-  }
-}
-@keyframes fade-out {
-  from{
-    opacity:1;
-    transform: scale(1);
-  }
-  to{
-    opacity:0;
-    transform: scale(2);
-  }
 
 }

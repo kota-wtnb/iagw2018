@@ -33,6 +33,9 @@ $(function(){
       case "#exhibitors":
         position = exhibitPos + height * 2/3;
         break;
+      case "#other-exhibition":
+        position = oxPos + height * 2/3;
+        break;
       default:
         position = 0;
     }
