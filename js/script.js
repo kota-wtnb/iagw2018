@@ -8,6 +8,7 @@ $(function(){
     setAnimation($('#about'),scrollPos,0,conceptPos);
     setAnimation($('#concept'),scrollPos,conceptPos,infoPos);
     setAnimation($('#info'),scrollPos,infoPos,exhibitPos);
+    setAnimation($('#exhibitors'),scrollPos,exhibitPos,height * 4);
     $('#nav').css({'top':scrollPos/height/5 * $('header').height()});
   });
   
@@ -24,6 +25,9 @@ $(function(){
         break;
       case "#info":
         position = infoPos + height * 2/3;
+        break;
+      case "#exhibitors":
+        position = exhibitPos + height * 2/3;
         break;
       default:
         position = 0;
