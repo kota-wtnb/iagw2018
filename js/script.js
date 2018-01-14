@@ -1,17 +1,21 @@
+
 $(function(){
   var height = window.innerHeight;
   var conceptPos = height;
   var infoPos = height * 2;
   var exhibitPos = height * 3;
+  var oxPos = height * 4;
+  var endPos = height * 5;
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
     setAnimation($('#about'),scrollPos,0,conceptPos);
     setAnimation($('#concept'),scrollPos,conceptPos,infoPos);
     setAnimation($('#info'),scrollPos,infoPos,exhibitPos);
-    setAnimation($('#exhibitors'),scrollPos,exhibitPos,height * 4);
+    setAnimation($('#exhibitors'),scrollPos,exhibitPos,oxPos);
+    setAnimation($('#other-exhibition'),scrollPos,oxPos,endPos);
     $('#nav').css({'top':scrollPos/height/5 * $('header').height()});
   });
-  
+
   $('header a').click(function() {
     var speed = 1000;
     var target= $(this).attr("href");
@@ -34,7 +38,7 @@ $(function(){
     }
      //$('body,html').animate({scrollTop:position}, speed, 'swing');
      $('body,html').scrollTop(position);
-     return false;  
+     return false;
    });
 });
 
