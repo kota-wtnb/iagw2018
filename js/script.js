@@ -28,9 +28,9 @@ $(function(){
       default:
         position = 0;
     }
-     $('body,html').animate({scrollTop:position}, speed, 'swing');
-     return false;
-  });
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;  
+   });
 });
 
 function setAnimation(element,pos,min,max){

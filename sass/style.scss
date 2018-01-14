@@ -169,6 +169,42 @@ span.concept-quest-ja{
 
 }
 
+#access{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#access-content{
+  background: #ffffff;
+  opacity: 0.9;
+  width: 100%;
+  margin: 0 auto;
+  color: #333333;
+  h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #666666;
+  }
+}
+#access-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #access-map{
+    margin: 50px;
+  }
+  #access-message{
+    margin: 50px;
+    p{
+      text-align: left;
+    }
+  }
+}
+
 /*出展者*/
 #exhibitors{
 
