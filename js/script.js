@@ -1,10 +1,13 @@
+
 $(function(){
   $(window).scroll(function() {
   var scrollPos = $(window).scrollTop();
   var height = window.innerHeight;
-    setAnimation($('#about'),scrollPos,0,height);
-    setAnimation($('#concept'),scrollPos,height,height*2);
-    setAnimation($('#info'),scrollPos,height*2,height*3);
+    setAnimation($('#about'),scrollPos,0,1000);
+    setAnimation($('#concept'),scrollPos,1000,2000);
+    setAnimation($('#info'),scrollPos,2000,3000);
+    setAnimation($('#exhibitors'),scrollPos,3000,4000);
+    setAnimation($('#other-exhibition'),scrollPos,4000,5000);
   });
 });
 
