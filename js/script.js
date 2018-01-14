@@ -48,9 +48,13 @@ $(function(){
      studioInfo.forEach(function(s){
        if(id == s.id) {
         $('.sutudios-name').text(s.name);
+        $('#studios-explain img').removeAttr("src");
+        $('#studios-explain img').bind('load', function(){
+          $('#studios-explain p').text(s.text);
+          $('#studios-explain').css({'z-index':'3000','opacity':'1'});
+        });
         $('#studios-explain img').attr("src","img/" + s.id + ".jpg");
-        $('#studios-explain p').text(s.text);
-        $('#studios-explain').css({'z-index':'3000','opacity':'1'});
+        
        }
      });
    });
