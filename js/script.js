@@ -12,7 +12,7 @@ $(function(){
   });
   
   $('header a').click(function() {
-    var speed = 3000;
+    var speed = 1000;
     var target= $(this).attr("href");
     var position = 0;
     switch (target) {
@@ -28,8 +28,9 @@ $(function(){
       default:
         position = 0;
     }
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;  
+     //$('body,html').animate({scrollTop:position}, speed, 'swing');
+     $('body,html').scrollTop(position);
+     return false;  
    });
 });
 
