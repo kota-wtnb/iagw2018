@@ -49,12 +49,13 @@ $(function(){
        if(id == s.id) {
         $('.sutudios-name').text(s.name);
         $('#studios-explain img').removeAttr("src");
+        $('#load-wrapper').show();
         $('#studios-explain img').bind('load', function(){
           $('#studios-explain p').text(s.text);
           $('#studios-explain').css({'z-index':'3000','opacity':'1'});
+          $('#load-wrapper').hide();
         });
         $('#studios-explain img').attr("src","img/" + s.id + ".jpg");
-        
        }
      });
    });
