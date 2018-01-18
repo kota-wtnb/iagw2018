@@ -118,7 +118,7 @@ header{
     margin: 13px;
   }
   p{
-
+    text-align: justify;
   }
 }
 
@@ -197,10 +197,10 @@ span.concept-quest-ja{
   justify-content: center;
   align-items: center;
   #access-map{
-    margin: 50px 25px 0 0;
+    margin: 0 25px 5% 0;
   }
   #access-message{
-    margin: 50px 0 0 25px;
+    margin: 0 0 5% 25px;
     p{
       text-align: left;
       font-size: 15px;
@@ -252,7 +252,7 @@ span.concept-quest-ja{
   height:auto;
   padding:20px;
   z-index:-2000;
-  .sutudios-name{
+  .studios-name{
     font-size:20px;
     margin:20px;
   }
@@ -270,7 +270,7 @@ span.concept-quest-ja{
   }
   .close{
     color: #fff;
-    margin:auto;
+    margin:10px auto;
     width:50%;
     height:30px;
     line-height: 30px;
@@ -437,5 +437,66 @@ span.concept-quest-ja{
   span.text-hide{
     display: none;
   }
-
+  
+  /*INFOMATION*/
+  #access-box{
+    display:block;
+    margin:0;
+    height:80vh;
+    #access-map{
+      text-align: center;
+      margin:0;
+      iframe{
+        width:78vw;
+        display:block;
+        margin: 0 11vw;
+        height:30vh;
+      }
+    }
+    #access-message{
+      margin:10px 20px;
+      p{
+        margin:0 3vw;
+        text-align: left;
+        font-size: 4.5vw;
+        color: black;
+        line-height: 1.3em;
+      }
+    }
+  }
+  
+  /*exhibitors*/
+  #exhibitors-content{
+    h1{
+      margin:5px 0;
+    }
+    ul{
+      width:80vw;
+      margin:5px 15vw;
+      li{
+        font-size: 14px;
+        line-height: 1.5em;
+      }
+    }
+  }
+  #studios-explain{
+    .studios-name{
+      margin:10px 0;
+    }
+    width:80vw;
+    img{
+      width:90%;
+    }
+    p{
+      width:90%;
+      margin:15px auto 0 auto;
+      max-height:30vh;
+      overflow:scroll;
+    }
+    .close{
+      width:90%;
+      height:35px;
+      line-height: 35px;
+    }
+  }
 }

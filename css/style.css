@@ -112,6 +112,8 @@ header {
     font-size: 15pt;
     letter-spacing: 1px;
     margin: 13px; }
+  #about-message p {
+    text-align: justify; }
 
 /*CONCEPT*/
 #concept {
@@ -183,9 +185,9 @@ span.concept-quest-ja {
   justify-content: center;
   align-items: center; }
   #access-box #access-map {
-    margin: 50px 25px 0 0; }
+    margin: 0 25px 5% 0; }
   #access-box #access-message {
-    margin: 50px 0 0 25px; }
+    margin: 0 0 5% 25px; }
     #access-box #access-message p {
       text-align: left;
       font-size: 15px;
@@ -231,7 +233,7 @@ span.concept-quest-ja {
   height: auto;
   padding: 20px;
   z-index: -2000; }
-  #studios-explain .sutudios-name {
+  #studios-explain .studios-name {
     font-size: 20px;
     margin: 20px; }
   #studios-explain img {
@@ -246,7 +248,7 @@ span.concept-quest-ja {
     font-size: 14px; }
   #studios-explain .close {
     color: #fff;
-    margin: auto;
+    margin: 10px auto;
     width: 50%;
     height: 30px;
     line-height: 30px;
@@ -381,4 +383,49 @@ span.concept-quest-ja {
     line-height: 16px;
     letter-spacing: 5px; }
   span.text-hide {
-    display: none; } }
+    display: none; }
+  /*INFOMATION*/
+  #access-box {
+    display: block;
+    margin: 0;
+    height: 80vh; }
+    #access-box #access-map {
+      text-align: center;
+      margin: 0; }
+      #access-box #access-map iframe {
+        width: 78vw;
+        display: block;
+        margin: 0 11vw;
+        height: 30vh; }
+    #access-box #access-message {
+      margin: 10px 20px; }
+      #access-box #access-message p {
+        margin: 0 3vw;
+        text-align: left;
+        font-size: 4.5vw;
+        color: black;
+        line-height: 1.3em; }
+  /*exhibitors*/
+  #exhibitors-content h1 {
+    margin: 5px 0; }
+  #exhibitors-content ul {
+    width: 80vw;
+    margin: 5px 15vw; }
+    #exhibitors-content ul li {
+      font-size: 14px;
+      line-height: 1.5em; }
+  #studios-explain {
+    width: 80vw; }
+    #studios-explain .studios-name {
+      margin: 10px 0; }
+    #studios-explain img {
+      width: 90%; }
+    #studios-explain p {
+      width: 90%;
+      margin: 15px auto 0 auto;
+      max-height: 30vh;
+      overflow: scroll; }
+    #studios-explain .close {
+      width: 90%;
+      height: 35px;
+      line-height: 35px; } }
