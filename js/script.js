@@ -47,7 +47,7 @@ $(function(){
      var id = $(this).attr("id");
      studioInfo.forEach(function(s){
        if(id == s.id) {
-        $('.sutudios-name').text(s.name);
+        $('.studios-name').text(s.name);
         $('#studios-explain img').removeAttr("src");
         $('#load-wrapper').show();
         $('#studios-explain img').bind('load', function(){

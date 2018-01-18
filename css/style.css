@@ -112,6 +112,8 @@ header {
     font-size: 15pt;
     letter-spacing: 1px;
     margin: 13px; }
+  #about-message p {
+    text-align: justify; }
 
 /*CONCEPT*/
 #concept {
@@ -183,9 +185,9 @@ span.concept-quest-ja {
   justify-content: center;
   align-items: center; }
   #access-box #access-map {
-    margin: 50px 25px 0 0; }
+    margin: 0 25px 5% 0; }
   #access-box #access-message {
-    margin: 50px 0 0 25px; }
+    margin: 0 0 5% 25px; }
     #access-box #access-message p {
       text-align: left;
       font-size: 15px;
@@ -231,7 +233,7 @@ span.concept-quest-ja {
   height: auto;
   padding: 20px;
   z-index: -2000; }
-  #studios-explain .sutudios-name {
+  #studios-explain .studios-name {
     font-size: 20px;
     margin: 20px; }
   #studios-explain img {
@@ -246,7 +248,7 @@ span.concept-quest-ja {
     font-size: 14px; }
   #studios-explain .close {
     color: #fff;
-    margin: auto;
+    margin: 10px auto;
     width: 50%;
     height: 30px;
     line-height: 30px;
@@ -337,3 +339,149 @@ span.concept-quest-ja {
 
 /*フッター*/
 /*スマホ・タブレット*/
+@media screen and (max-width: 750px) {
+  body {
+    background: none; }
+  body::before {
+    background-color: #ffffff;
+    background-image: url(../img/IA_webDesign.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    text-align: center;
+    perspective: 500;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    content: ""; }
+  #firstview {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; }
+  #firstview-content ul {
+    background: #ffffff;
+    opacity: 0.9;
+    padding: 5% 10%;
+    display: inline-block; }
+    #firstview-content ul li {
+      font-size: 35px;
+      line-height: 48px;
+      letter-spacing: 1px;
+      text-align: left;
+      color: #333333; }
+  /*ABOUT*/
+  #about {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; }
+  #about-content {
+    background: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0 auto;
+    color: #333333; }
+  #about-message {
+    margin: 10%;
+    width: 80vw;
+    min-width: 80vw; }
+    #about-message h1 {
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin: 30px; }
+    #about-message p {
+      font-size: 16px;
+      line-height: 1.5em; }
+  /*CONCEPT*/
+  #concept {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; }
+  #concept-content {
+    background: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0 auto;
+    color: #333333; }
+    #concept-content h1 {
+      margin: 5% 0;
+      color: #666666; }
+  #concept-message {
+    margin: 10% 10%;
+    width: 80vw;
+    min-width: 80vw;
+    text-align: left; }
+    #concept-message p {
+      font-size: 16px;
+      line-height: 1.5em; }
+  span.concept-quest {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 5px; }
+  span.concept-quest-ja {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 5px; }
+  span.text-hide {
+    display: none; }
+  /*INFOMATION*/
+  #access-box {
+    display: block;
+    margin: 0;
+    height: 80vh; }
+    #access-box #access-map {
+      text-align: center;
+      margin: 0; }
+      #access-box #access-map iframe {
+        width: 78vw;
+        display: block;
+        margin: 0 11vw;
+        height: 30vh; }
+    #access-box #access-message {
+      margin: 10px 20px; }
+      #access-box #access-message p {
+        margin: 0 3vw;
+        text-align: left;
+        font-size: 4.5vw;
+        color: black;
+        line-height: 1.3em; }
+  /*exhibitors*/
+  #exhibitors-content h1 {
+    margin: 5px 0; }
+  #exhibitors-content ul {
+    width: 80vw;
+    margin: 5px 15vw; }
+    #exhibitors-content ul li {
+      font-size: 14px;
+      line-height: 1.5em; }
+  #studios-explain {
+    width: 80vw; }
+    #studios-explain .studios-name {
+      margin: 10px 0; }
+    #studios-explain img {
+      width: 90%; }
+    #studios-explain p {
+      width: 90%;
+      margin: 15px auto 0 auto;
+      max-height: 30vh;
+      overflow: scroll; }
+    #studios-explain .close {
+      width: 90%;
+      height: 35px;
+      line-height: 35px; } }

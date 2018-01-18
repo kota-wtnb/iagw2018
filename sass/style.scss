@@ -118,7 +118,7 @@ header{
     margin: 13px;
   }
   p{
-
+    text-align: justify;
   }
 }
 
@@ -197,10 +197,10 @@ span.concept-quest-ja{
   justify-content: center;
   align-items: center;
   #access-map{
-    margin: 50px 25px 0 0;
+    margin: 0 25px 5% 0;
   }
   #access-message{
-    margin: 50px 0 0 25px;
+    margin: 0 0 5% 25px;
     p{
       text-align: left;
       font-size: 15px;
@@ -252,7 +252,7 @@ span.concept-quest-ja{
   height:auto;
   padding:20px;
   z-index:-2000;
-  .sutudios-name{
+  .studios-name{
     font-size:20px;
     margin:20px;
   }
@@ -270,7 +270,7 @@ span.concept-quest-ja{
   }
   .close{
     color: #fff;
-    margin:auto;
+    margin:10px auto;
     width:50%;
     height:30px;
     line-height: 30px;
@@ -374,4 +374,186 @@ span.concept-quest-ja{
 
 /*スマホ・タブレット*/
 @media screen and (max-width:750px) {
+  body{
+    background: none;
+  }
+  body::before {
+    background-color: #ffffff;
+    background-image: url(../img/IA_webDesign.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    text-align: center;
+    perspective: 500;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    content: "";
+  }
+  #firstview{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  #firstview-content{
+    ul{
+      background: #ffffff;
+      opacity: 0.9;
+      padding: 5% 10%;
+      display: inline-block;
+      li{
+        font-size: 35px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #333333;
+      }
+    }
+  }
+  /*ABOUT*/
+  #about{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  #about-content{
+    background: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0 auto;
+    color: #333333;
+  }
+  #about-message{
+    margin: 10%;
+    width: 80vw;
+    min-width: 80vw;
+    h1{
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin: 30px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+  }
+  /*CONCEPT*/
+  #concept{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  #concept-content{
+    background: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0 auto;
+    color: #333333;
+    h1{
+      margin: 5% 0;
+      color: #666666;
+    }
+  }
+  #concept-message{
+    margin: 10% 10%;
+    width: 80vw;
+    min-width: 80vw;
+    text-align: left;
+    p{
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+  }
+  span.concept-quest{
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing:5px;
+  }
+  span.concept-quest-ja{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing:5px;
+  }
+  span.text-hide{
+    display: none;
+  }
+  
+  /*INFOMATION*/
+  #access-box{
+    display:block;
+    margin:0;
+    height:80vh;
+    #access-map{
+      text-align: center;
+      margin:0;
+      iframe{
+        width:78vw;
+        display:block;
+        margin: 0 11vw;
+        height:30vh;
+      }
+    }
+    #access-message{
+      margin:10px 20px;
+      p{
+        margin:0 3vw;
+        text-align: left;
+        font-size: 4.5vw;
+        color: black;
+        line-height: 1.3em;
+      }
+    }
+  }
+  
+  /*exhibitors*/
+  #exhibitors-content{
+    h1{
+      margin:5px 0;
+    }
+    ul{
+      width:80vw;
+      margin:5px 15vw;
+      li{
+        font-size: 14px;
+        line-height: 1.5em;
+      }
+    }
+  }
+  #studios-explain{
+    .studios-name{
+      margin:10px 0;
+    }
+    width:80vw;
+    img{
+      width:90%;
+    }
+    p{
+      width:90%;
+      margin:15px auto 0 auto;
+      max-height:30vh;
+      overflow:scroll;
+    }
+    .close{
+      width:90%;
+      height:35px;
+      line-height: 35px;
+    }
+  }
 }
