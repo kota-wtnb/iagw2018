@@ -1,11 +1,10 @@
-
 $(function(){
-  var height = window.innerHeight;
-  var conceptPos = height;
-  var infoPos = height * 2;
-  var exhibitPos = height * 3;
-  var oxPos = height * 4;
-  var endPos = height * 5;
+  const height = window.innerHeight;
+  const conceptPos = height;
+  const infoPos = height * 2;
+  const exhibitPos = height * 3;
+  const oxPos = height * 4;
+  const endPos = height * 5;
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
     setAnimation($('#firstview'),scrollPos,-(height/2),height/4);
