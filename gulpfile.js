@@ -1,53 +1,59 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var browserSync = require("browser-sync");
-var notify = require("gulp-notify");
-var pug = require("gulp-pug");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const plumber = require("gulp-plumber");
+const browserSync = require("browser-sync");
+const notify = require("gulp-notify");
+const pug = require("gulp-pug");
 
-gulp.task('default', ['sass', 'browser-sync', 'pug', 'watch']);
-
-gulp.task('watch', () => {
-  gulp.watch(['./sass/**'], () => {
-    gulp.start(['sass']);
-  });
-  gulp.watch(['./pug/**'], () => {
-    gulp.start(['pug']);
-  });
+gulp.task("watch", function() {
+  gulp.watch("./sass/**", gulp.task('sass'));
+  gulp.watch("./pug/**", gulp.task('pug'));
 });
 
-gulp.task('browser-sync', () => {
+gulp.task('browser-sync', function() {
   browserSync({
     server: {
       baseDir: "./"
     }
   });
-  gulp.watch("./js/**/*.js", ['reload']);
-  gulp.watch("./*.html", ['reload']);
+  gulp.watch("./js/**/*.js", gulp.task('reload'));
+  gulp.watch("./*.html", gulp.task('reload'));
 });
 
-gulp.task("sass", () => {
-  gulp.src("./sass/**/*.scss")
+gulp.task("sass", function() {
+  return gulp.src("./sass/style.scss")
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
     }))
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-reset-scss').includePath
+    }))
     .pipe(gulp.dest("./css"))
     .pipe(browserSync.stream())
 });
 
-gulp.task("pug", () => {
+gulp.task("pug", function() {
   var option = {
     pretty: true
-  }
-  gulp.src("./pug/**/*.pug")
+  };
+  return (
+    gulp.src("./pug/*.pug")
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
     }))
     .pipe(pug(option))
     .pipe(gulp.dest("./"))
+  );
 });
 
-gulp.task('reload', () => {
+gulp.task('reload', function(done) {
   browserSync.reload();
+  done();
 });
+
+gulp.task('default',
+  gulp.series(
+    gulp.parallel("sass", "pug"),
+    gulp.parallel("browser-sync", "watch")
+  )
+);
